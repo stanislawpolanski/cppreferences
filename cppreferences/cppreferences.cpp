@@ -1,28 +1,9 @@
 #include "pch.h"
 #include <iostream>
-
-class Car
-{
-private:
-	int engineVolume;
-public:
-	void setVolume(int volume)
-	{
-		this->engineVolume = volume;
-	}
-
-	int getVolume()
-	{
-		return this->engineVolume;
-	}
-};
+#include "Car.h"
 
 int main()
 {
-	Car c1;
-
-	c1.setVolume(1500);
-
-	std::cout << c1.getVolume();
-
+	Car c1(1990);
+	std::cout << c1.getYear();
 }
